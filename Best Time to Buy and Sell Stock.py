@@ -22,8 +22,8 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        #initial = prices[0]
-        leftIdx = 1
+
+        leftIdx = 0
         maxP = 0
         for rightIdx in range(1, len(prices)):
             if prices[rightIdx] < prices[leftIdx]:
